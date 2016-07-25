@@ -1,135 +1,69 @@
-#header {
-	background-color: #211B16;
-	-webkit-transition: all 1s;
-	transition: all 1s;
-	margin-bottom: 15px;
+header {
+    min-width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 	margin-top: 15px;
+    align-items: center;
 }
-#header .img-responsive:hover {
-	filter: grayscale(70%);
-	transform: scale(0.95);
-	cursor: pointer;
+header img {
+    width: 100%;
+    height: auto;
 }
-#header-slogan {
-	position: absolute;
-	left: 183px;
-	top: 61px;
-	transition: all 0.6s;
+header img:hover {
+    cursor: pointer;
 }
-#header-slogan:hover {
-	left: 160px;
-}
-#blok-1 {
-	display: inline-block;
-	text-align: center;
-	box-shadow: 1px 1px 10px 1px black;
+
+.block {
+    display: inline-block;
+    text-align: center;
+    box-shadow: 1px 1px 10px 1px black;
 	-webkit-transition: all 0.6s;
 	-moz-transition: all 0.6s;
 	-o-transition: all 0.6s;
 	transition: all 0.6s;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+	margin-top: 15px;
+    color: white;
+}
+.block:hover {
+    box-shadow: 1px 1px 10px 1px #455974;
+	transform: scale(0.95);
+	filter: grayscale(70%);
+	-moz-filter: grayscale(70%);
+	-webkit-filter: grayscale(70%);
+	-o-filter: grayscale(70%);
+	cursor: pointer;
+	color: #211B16;
+}
+
+.color1 {
 	background: #008040;
-	max-width: 100%;
-	height: auto;
-	margin-bottom: 15px;
-	margin-top: 15px;
 }
-#blok-1:hover {
-	box-shadow: 1px 1px 10px 1px #455974;
-	transform: scale(0.95);
-	filter: grayscale(70%);
-	-moz-filter: grayscale(70%);
-	-webkit-filter: grayscale(70%);
-	-o-filter: grayscale(70%);
-	cursor: pointer;
-	color: #211B16;
-}
-#blok-2 {
-	display: inline-block;
-	text-align: center;
-	max-width: 100%;
-	height: auto;
-	box-shadow: 1px 1px 10px 1px black;
-	-webkit-transition: all 0.6s;
-	-moz-transition: all 0.6s;
-	-o-transition: all 0.6s;
-	transition: all 0.6s;
+.color2 {
 	background: #a3297a;
-	margin-bottom: 15px;
-	margin-top: 15px;
 }
-#blok-2:hover {
-	box-shadow: 1px 1px 10px 1px #455974;
-	transform: scale(0.95);
-	filter: grayscale(70%);
-	-moz-filter: grayscale(70%);
-	-webkit-filter: grayscale(70%);
-	-o-filter: grayscale(70%);
-	cursor: pointer;
-	color: #211B16;
-}
-#blok-3 {
-	display: inline-block;
-	text-align: center;
-	max-width: 100%;
-	height: auto;
-	box-shadow: 1px 1px 10px 1px black;
-	-webkit-transition: all 0.6s;
-	-moz-transition: all 0.6s;
-	-o-transition: all 0.6s;
-	transition: all 0.6s;
+.color3 {
 	background: #997a00;
-	margin-bottom: 15px;
-	margin-top: 15px;
 }
-#blok-3:hover {
-	box-shadow: 1px 1px 10px 1px #455974;
-	transform: scale(0.95);
-	filter: grayscale(70%);
-	-moz-filter: grayscale(70%);
-	-webkit-filter: grayscale(70%);
-	-o-filter: grayscale(70%);
-	cursor: pointer;
-	color: #211B16;
-}
-#blok-4 {
-	display: inline-block;
-	text-align: center;
-	max-width: 100%;
-	height: auto;
-	box-shadow: 1px 1px 10px 1px black;
-	-webkit-transition: all 0.6s;
-	-moz-transition: all 0.6s;
-	-o-transition: all 0.6s;
-	transition: all 0.6s;
+.color4 {
 	background: #01A9DB;
-	margin-bottom: 15px;
-	margin-top: 15px;
 }
-#blok-4:hover {
-	box-shadow: 1px 1px 10px 1px #455974;
-	transform: scale(0.95);
-	filter: grayscale(70%);
-	-moz-filter: grayscale(70%);
-	-webkit-filter: grayscale(70%);
-	-o-filter: grayscale(70%);
-	cursor: pointer;
-	color: #211B16;
-}
+
 h1 {
 	font-size: 1.5em;
     font-weight: 400;
 }
-h1:hover {
 
-}
 h2 {
 	font-family: 'Exo 2', sans-serif;
 	font-size: 1.6em;
 	cursor: pointer;
 }
-h2:hover {
 
-}
 h3 {
 	font-size: 2em;
 	font-family: 'Kelly Slab', cursive;
@@ -151,7 +85,6 @@ h6 {
 }
 h6:hover {
 	transform: scale(1.1);
-
 }
 
 /* footer style */
@@ -176,9 +109,20 @@ footer img:hover {
 	-webkit-filter: grayscale(70%);
 	-o-filter: grayscale(70%);
     transform: scale(0.95);
-    transition: all 0.5s;
+    -webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
 }
-
+.img-responsive {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
 
 .desc {
 	font-family: 'Exo 2', sans-serif;

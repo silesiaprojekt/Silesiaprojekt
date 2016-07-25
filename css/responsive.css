@@ -232,14 +232,8 @@ figure {
 img {
   vertical-align: middle;
 }
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  	-webkit-transition: all 1s;
-	transition: all 1s;
 
-}
+
 .img-rounded {
   border-radius: 6px;
 }
