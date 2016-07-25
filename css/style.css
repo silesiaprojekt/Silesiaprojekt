@@ -153,16 +153,32 @@ h6:hover {
 	transform: scale(1.1);
 
 }
+
+/* footer style */
 footer {
     min-width: 100%;
     min-height: 50px;
-
 	margin-bottom: 15px;
 	margin-top: 15px;
     display: flex;
 	color: white;
-	font-family: 'Montserrat', sans-serif;
+    justify-content: center;
 }
+footer img {
+    margin: 8px;
+    box-shadow: 1px 1px 10px 1px black;
+}
+footer img:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px #455974;
+    filter: grayscale(70%);
+	-moz-filter: grayscale(70%);
+	-webkit-filter: grayscale(70%);
+	-o-filter: grayscale(70%);
+    transform: scale(0.95);
+    transition: all 0.5s;
+}
+
 
 .desc {
 	font-family: 'Exo 2', sans-serif;
