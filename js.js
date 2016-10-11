@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-masterdev
-=======
-master
->>>>>>> origin/master
+dev
+/
